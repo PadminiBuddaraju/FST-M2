@@ -1,0 +1,8 @@
+services:
+  redis-db:
+    image: 'redis'
+  node-app:
+    build: ./
+    image: 'docker.io/padminibuddaraju/visits'
+    ports:
+      - "8081:8081"
